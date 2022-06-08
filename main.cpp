@@ -103,10 +103,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-void returnNothing(float inputNumber, char setNothing)
+void returnNothing(float inputNumber, char setLetter = 'a')
 {
-    ignoreUnused(inputNumber, char setLetter = 'a');
-    return {};
+    ignoreUnused(inputNumber, setLetter);
 }
 /*
  2)
@@ -127,9 +126,9 @@ int countUp(int startingNumber)
 /*
  4)
  */
-void addition(int numberOne, int numberTwo);
+void addition(int numberOne, int numberTwo)
 {
-    ignoreUnused(numberOne, numberTWo);
+    ignoreUnused(numberOne, numberTwo);
 }
 /*
  5)
@@ -142,6 +141,9 @@ void checkOil(bool oilLow, int lastCheckinDays)
  6)
  */
 void wait(float time =1203234892.f)
+{
+    ignoreUnused(time);
+}
 /*
  7)
  */
