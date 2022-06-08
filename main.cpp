@@ -64,10 +64,29 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int age = 3;
+    int daysLived = 11800;
+    int inchHeight = 70;
+
+    float yearsLived = 32.3;
+    float GPA = 3.1;
+    float temp = 36.4;
+
+    bool climateChange = true;
+    bool likeSoccer = false;
+    bool hungry = false;
+
+    double decimalNumber = 3.912348239293;
+    double decibalLevel = 81.3920;
+    double pi = 3.14;
+
+    char letterGrade = 'A';
+    char bloodType = 'O';
+    char firstInitial = 'C';
     
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, age, daysLived, inchHeight, yearsLived, GPA, temp, climateChange, likeSoccer, hungry, decimalNumber, decibalLevel, pi, letterGrade, bloodType, firstInitial); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -84,35 +103,56 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+void returnNothing(float inputNumber, char setNothing)
+{
+    ignoreUnused(inputNumber, char setLetter = 'a');
+    return {};
+}
 /*
  2)
  */
-
+bool takeWalk(bool rain, int daysSinceLastWalk)
+{
+    ignoreUnused(rain, daysSinceLastWalk); 
+    return{};
+}
 /*
  3)
  */
-
+int countUp(int startingNumber)
+{
+    ignoreUnused(startingNumber);
+    return{};
+}       
 /*
  4)
  */
-
+void addition(int numberOne, int numberTwo);
+{
+    ignoreUnused(numberOne, numberTWo);
+}
 /*
  5)
  */
-
+void checkOil(bool oilLow, int lastCheckinDays)
+{
+    ignoreUnused(oilLow, lastCheckinDays);
+}
 /*
  6)
  */
-
+void wait(float time =1203234892.f)
 /*
  7)
  */
-
+void startCar(bool keysInserted = true, bool gas = true)
+{
+    ignoreUnused(keysInserted, gas);
+}
 /*
  8)
  */
-
+void 
 /*
  9)
  */
